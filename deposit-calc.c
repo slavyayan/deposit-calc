@@ -42,4 +42,7 @@ main()
     break;
     }
     }
-    
+    cout<<" Summa vklada posle nachisleniya- "<<s<<endl;
+    system("PAUSE");
+    return 0;
+    }
