@@ -27,4 +27,19 @@ main()
     switch(a)
     {
     case 1: 
+    {
+    if(c<121) s=s+p*s*0.02;
+    if(c<240) s=s+p*s*0.06;
+    else s=s+p*s*0.12;
+    break;
+    }
+    }
+    case 2:
+    {
+    if (c<121) s=s+p*s*0.03;
+    if(c<240) s=s+p*s*0.08;
+    else s=s+p*s*0.15;
+    break;
+    }
+    }
     
