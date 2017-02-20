@@ -1,7 +1,9 @@
 #include <math.h>
 #include <iostream>
+#include <stdlib.h>
+#include <stdio.h>
 using namespace std;
-main()
+int main()
 {
     int a;
     float p,c;
@@ -9,19 +11,18 @@ main()
     cout<<"Vasha summa vklada - ";
     cin>>s;
     cout<<"Vash srok vklada - ";
-    cin>>c
-    if((c>365)||(c<0)||(s<10000)){
-    cout>> " Vklad nevozmozhen "
+    cin>>c;
+    if ((c>365)||(c<0)||(s<10000)){
+    cout<<" Vklad nevozmozhen ";
     return 1;
     }
     p=c/365;
     if(s<100000) a=1;
     else a=2;
-    if (s<=30) 
+    if (c<=30) 
     {
-    s=s*0.9;
-    cout<<"Summa vashego vklada - "<<s<<endl;
-    system ("PAUSE");
+    s=s-s*0.1;
+    cout<<"Summa vashego vklada - " <<s<<endl;
     return 0;
     }
     switch(a)
@@ -33,7 +34,6 @@ main()
     else s=s+p*s*0.12;
     break;
     }
-    }
     case 2:
     {
     if (c<121) s=s+p*s*0.03;
@@ -42,7 +42,6 @@ main()
     break;
     }
     }
-    cout<<" Summa vklada posle nachisleniya- "<<s<<endl;
-    system("PAUSE");
+    cout<<" Summa vklada posle nachisleniya- "<<s<< endl;
     return 0;
     }
