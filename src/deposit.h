@@ -8,5 +8,5 @@ using namespace std;
 
 double f1(double s, float c,float p);
 double f2(double s, float c,float p);
-
+int f3(double s, float c);
 #endif

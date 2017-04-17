@@ -8,10 +8,7 @@ int main()
     cin>>s;
     cout<<"Vash srok vklada - ";
     cin>>c;
-    if ((c>365)||(c<0)||(s<10000)){
-    cout<<" Vklad nevozmozhen ";
-    return 1;
-    }
+    if(f3(s,c)==1) return 1;
     p=c/365;
     if(s<100000)s=f1(s,c,p);
     else s=f2(s,c,p);

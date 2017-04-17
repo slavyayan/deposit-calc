@@ -11,3 +11,9 @@ double f2(double s, float c,float p)  {
     else s=s+p*s*0.15;
     return s;
     }
+int f3(double s, float c){    
+if ((c>365)||(c<0)||(s<10000)){
+    cout<<" Vklad nevozmozhen ";
+    return 1;
+    }
+}
